@@ -40,9 +40,9 @@ l.sort() # ordena lista
 l.sort(reverse=True) #ordena inversamente
 print(l[-2]) # indice negativos
 # Diccionarios
-juadores = {'Javier Hernandez':'West Ham','Raul Jimenez':'Wolverhampton','Hirving Lozano':'PSV'}
-print(juadores['Javier Hernandez'])
-for j in juadores:
+jugadores = {'Javier Hernandez':'West Ham','Raul Jimenez':'Wolverhampton','Hirving Lozano':'PSV'}
+print(jugadores['Javier Hernandez'])
+for j in jugadores:
     print(j)
 
 diccionario = {'a':(1,2),'b':(3,4),'c':(5,6)} #tipos compuestos
@@ -50,3 +50,6 @@ print(diccionario.values()) #obtiene los valores
 print(diccionario.keys()) # obtiene las llaves
 nuevo = diccionario.copy() # copia el diccionario
 diccionario.clear() # borra los datos del diccionario
+nuevos = {'Diego Lainez':'America','Raul Gudiño':'Guadalajara'}
+jugadores.update(nuevos)
+print(jugadores)
