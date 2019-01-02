@@ -3,6 +3,12 @@ class Persona:
     edad = 0
     pais = ""
     contactos = {}
+    #constructor
+    def __init__(self,nombre,edad,pais):
+        self.nombre = nombre
+        self.edad = edad
+        self.pais = pais
+
     def saludar(self):
         print("hola mi nombre es:",self.nombre)
     def añadir_contacto(self,nombre,telefono):
@@ -12,7 +18,7 @@ class Persona:
         print(self.contactos)
 
 
-pepito = Persona()
+pepito = Persona("Hirving",23,"MX")
 print(pepito.edad)
 pepito.saludar()
 pepito.añadir_contacto("Juan","55698741")
